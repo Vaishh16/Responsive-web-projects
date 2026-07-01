@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberShield Dashboard - Monitor threats in real time">
+    <title>CyberShield Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <h1>CyberShield Dashboard</h1>
+    </header>
+    <main id="main-content">
+        <section class="stats" aria-label="Security Statistics">
+            <div class="stat-card">
+                <h2 id="threats-blocked">0</h2>
+                <p>Threats Blocked</p>
+            </div>
+            <div class="stat-card">
+                <h2 id="active-users">0</h2>
+                <p>Active Users</p>
+            </div>
+            <div class="stat-card">
+                <h2 id="scans-today">0</h2>
+                <p>Scans Today</p>
+            </div>
+        </section>
+        <section class="threats-section" aria-label="Threats Table">
+            <h2>Recent Threats</h2>
+            <div class="filters" role="group" aria-label="Filter threats by risk level">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="High">High</button>
+                <button class="filter-btn" data-filter="Medium">Medium</button>
+                <button class="filter-btn" data-filter="Low">Low</button>
+            </div>
+            <div class="table-wrapper">
+                <table aria-label="Threats list">
+                    <thead>
+                        <tr>
+                            <th>Threat Name</th>
+                            <th>Type</th>
+                            <th>Risk</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="threats-table">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CyberShield. All rights reserved.</p>
+    </footer>
+    <script src="script.js" async></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+    "stats": {
+        "threatsBlocked": 1240,
+        "activeUsers": 3,
+        "scansToday": 5
+    },
+    "threats": [
+        {
+            "id": 1,
+            "name": "Phishing Email",
+            "type": "Phishing",
+            "risk": "High",
+            "status": "Blocked"
+        },
+        {
+            "id": 2,
+            "name": "Malware.exe",
+            "type": "Malware",
+            "risk": "Medium",
+            "status": "Removed"
+        },
+        {
+            "id": 3,
+            "name": "Ransomware Attack",
+            "type": "Ransomware",
+            "risk": "High",
+            "status": "Blocked"
+        },
+        {
+            "id": 4,
+            "name": "Spyware Detected",
+            "type": "Spyware",
+            "risk": "Low",
+            "status": "Quarantined"
+        },
+        {
+            "id": 5,
+            "name": "SQL Injection",
+            "type": "Exploit",
+            "risk": "High",
+            "status": "Blocked"
+        },
+        {
+            "id": 6,
+            "name": "Adware Pop-up",
+            "type": "Adware",
+            "risk": "Low",
+            "status": "Removed"
+        },
+        {
+            "id": 7,
+            "name": "Trojan Horse",
+            "type": "Trojan",
+            "risk": "Medium",
+            "status": "Quarantined"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0f1e;
+    color: #e0e0e0;
+}
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: #4d9fff;
+    color: #0a0f1e;
+    padding: 10px 20px;
+    font-weight: bold;
+    z-index: 9999;
+}
+.skip-link:focus { top: 0; }
+header {
+    background-color: #070d1a;
+    padding: 20px 40px;
+}
+header h1 { color: #4d9fff; }
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.stat-card {
+    background-color: #111827;
+    border: 1px solid #1e2d45;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.stat-card h2 {
+    font-size: 42px;
+    color: #4d9fff;
+    margin-bottom: 10px;
+}
+.stat-card p { color: #b0b0b0; }
+.threats-section { padding: 0 40px 40px; }
+.threats-section h2 {
+    color: #4d9fff;
+    margin-bottom: 20px;
+}
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filter-btn {
+    padding: 8px 20px;
+    background-color: #111827;
+    border: 1px solid #1e2d45;
+    border-radius: 6px;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+.filter-btn.active {
+    background-color: #4d9fff;
+    color: #0a0f1e;
+    font-weight: bold;
+}
+.table-wrapper { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    background-color: #111827;
+    color: #4d9fff;
+    padding: 12px 16px;
+    text-align: left;
+}
+td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #1e2d45;
+}
+.risk-high { color: #ff4d4d; }
+.risk-medium { color: #ffaa00; }
+.risk-low { color: #00cc66; }
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #070d1a;
+    color: #a0a0a0;
+    font-size: 14px;
+}
+a:focus, button:focus {
+    outline: 2px solid #4d9fff;
+    outline-offset: 4px;
+}
+@media (max-width: 768px) {
+    .stats { grid-template-columns: 1fr; padding: 20px; }
+    .threats-section { padding: 0 20px 20px; }
+    .filters { flex-wrap: wrap; }
+}
